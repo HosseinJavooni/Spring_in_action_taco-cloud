@@ -41,7 +41,6 @@ public class DesignTacoController {
             model.addAttribute(type.toString().toLowerCase(), filterByType(ingredients, type));
         }
     }
-
     @ModelAttribute(name = "tacoOrder")
     public TacoOrder order() {
         return new TacoOrder();
